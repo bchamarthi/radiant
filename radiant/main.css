@@ -1,0 +1,257 @@
+/* HOMEPAGE  */
+
+h1 {
+    color: #588578;
+    font-size: 50px;
+    font-family: 'Recursive', sans-serif;
+    text-align: center;
+    border-style: solid;
+    border-color: #a6d9db;
+    border-radius: 10px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+h2 {
+    color: #71b687;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    color: #71b687;
+    font-size: 35px;
+    text-align: start;
+    font-family: 'Recursive', sans-serif;
+    margin-left: 45px;
+    margin-right: 70px;
+}
+
+h4 {
+    color: #71b687;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Recursive', sans-serif;
+    margin-left: 45px;
+    margin-right: 70px;
+}
+
+h5 {
+    visibility: hidden;
+}
+
+p {
+    color: #758485;
+    font-size: 18px;
+    text-align: start;
+    margin-left: 45px;
+    margin-right: 90px;
+    font-family: 'Lato', sans-serif;
+}
+
+.listItem1 {
+    color: #99d8c4;
+    font-size: 20px;
+    text-align: start;
+    margin-left: 45px;
+    margin-right: 90px;
+    font-family: 'Lato', sans-serif;
+}
+
+.newsForm {
+    color: #71b687;
+    font-size: 20px;
+    text-align: start;
+    font-family: 'Recursive', sans-serif;
+    margin-left: 45px;
+    margin-right: 70px;
+}
+
+.submitButton {
+    background-color: #a6d9db;
+}
+
+
+/* FLEXBOX FOR HOMEPAGE COLLAGE  */
+
+
+/* ALL ROW CODES:  */
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-right: 75px;
+    margin-left: 75px;
+    align-content: space-around;
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+
+/* ROW 1 IMGS:  */
+
+#aa {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#ba {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#ca {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#da {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#ea {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+
+/* ROW 2 IMGS:  */
+
+#ab {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#bb {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#cb {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#db {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#eb {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+
+/* ROW 3 IMGS:  */
+
+#ac {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#bc {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#cc {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#dc {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#ec {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+
+/* ALL PICS  */
+
+img {
+    object-fit: cover;
+    height: auto;
+    width: auto;
+}

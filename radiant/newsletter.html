@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Newsletter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+</head>
+
+<body>
+    <!-- NAV BAR  -->
+    <div class="w3-top">
+        <div class="w3-bar w3-card" style="font-family: 'Lato', sans-serif; background-color: #99d8c4;">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+            <a href="initiatives.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INITIATIVES</a>
+            <a href="resources.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESOURCES</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+            <a href="newsletter.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWSLETTER</a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- NEWSLETTER CONTENT -->
+    <h1>Radiant Research</h1>
+    <br>
+    <h3>Newsletter</h3>
+    <h4 class="listItem1" style="color: #758485 ">Subscribe to our monthly newsletter for additional resources, dates, and promotions!</h4>
+    <form name="submit-to-google-sheet" class="newsForm">
+        <input class="emaill" name="email" type="email" placeholder="Email" required>
+        <br>
+        <br>
+        <input class="fname" name="firstName" type="text" placeholder="First Name">
+        <br>
+        <br>
+        <input name="lastName" type="text" placeholder="Last Name">
+        <br>
+        <br>
+        <button type="submit" class="submitButton">Send</button>
+
+        <h5 class="thx">insert here</h5>
+    </form>
+
+    <script>
+        var name = $('.fname');
+        var email = $('.emaill');
+        var results = $('.thx');
+        button.on("click", sendForm);
+
+        function sendForm() {
+            var nameVal = name.val();
+            var emailVal = email.val();
+
+            if (emailVal === "" || nameVal === "") {
+                alert("Please fill out your email and/or name!")
+            } else {
+                results.text(`Hey ${nameVal}! Thanks for submitting the form, stay tuned for the newsletters :)`);
+                results.css("visibility", "visible");
+
+            }
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyGjIPceezx-MI9Z6EVFguIVzhoq3A80k7AscHVLJR9wOAnykgq/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+
+        })
+    </script>
+
+
+
+    <!-- FOOTER -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge ">
+        <a href=" " target="_blank "><i class="fa fa-facebook-official w3-hover-opacity "></i></a>
+        <a href=" " target="_blank "><i class="fa fa-instagram w3-hover-opacity "></i></a>
+        <a href=" " target="_blank "><i class="fa fa-snapchat w3-hover-opacity "></i></a>
+        <a href=" " target="_blank "><i class="fa fa-pinterest-p w3-hover-opacity "></i></a>
+        <a href=" " target="_blank "><i class="fa fa-twitter w3-hover-opacity "></i></a>
+        <a href=" " target="_blank "><i class="fa fa-linkedin w3-hover-opacity "></i></a>
+    </footer>
+
+
+
+</body>
+
+</html>
